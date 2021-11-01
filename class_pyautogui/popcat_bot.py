@@ -12,3 +12,6 @@ def main():
         click()
 
 main()
+
+# crazy way
+# https://gist.github.com/DaWe35/0febd8b058e4476967d12675a622c989
