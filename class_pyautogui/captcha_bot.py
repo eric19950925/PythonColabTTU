@@ -31,6 +31,8 @@ def recognize_text(image):
 
 
 # src = cv.imread('thsr_captcha.png')
+# https://github.com/eric19950925/PythonColabTTU/blob/main/class_pyautogui/captcha_bot.py
+
 src = cv.imread('example.png')
 cv.imshow('input image', src)
 recognize_text(src)
