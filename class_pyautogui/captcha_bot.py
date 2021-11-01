@@ -1,3 +1,4 @@
+import os
 import cv2 as cv
 import pytesseract
 from PIL import Image
@@ -23,12 +24,16 @@ def recognize_text(image):
     #  identify 
     test_message = Image.fromarray(dilate)
     text = pytesseract.image_to_string(test_message)
-    print(text)
+    #  print(text)
+    f = open('output.txt', 'w')
+    print(text, file=f)
+    f.close()
 
 
-#src = cv.imread('thsr_captcha.png')
+# src = cv.imread('thsr_captcha.png')
 src = cv.imread('example.png')
 cv.imshow('input image', src)
 recognize_text(src)
+os.startfile('output.txt')
 cv.waitKey(0)
 cv.destroyAllWindows()
