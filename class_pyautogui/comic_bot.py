@@ -22,7 +22,7 @@ def read_one_page():
 
 def main():
     # 將目標元件截圖，之後都讓pyautogui幫我們尋找他
-    # pyautogui.screenshot('next_page.png', region=(1225, 870, 80, 35))
+    # pyautogui.screenshot('next_page.png', region=(0, 1045, 80, 35))
     for i in range(50):
         time.sleep(3)
         read_one_page()
